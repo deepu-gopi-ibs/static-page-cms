@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_content_columns",
+  "info": {
+    "displayName": "Column"
+  },
+  "options": {},
+  "attributes": {
+    "Cell": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

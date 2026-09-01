@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_content_rows",
+  "info": {
+    "displayName": "Row"
+  },
+  "options": {},
+  "attributes": {
+    "TableCell": {
+      "type": "component",
+      "component": "content.table-cell",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

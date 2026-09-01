@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "content": {
+      "type": "dynamiczone",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "components": [
+        "page.page-header",
+        "content.rich-text",
+        "content.card-grid",
+        "content.content-table",
+        "content.ck-editor-content",
+        "content.button",
+        "content.hero-image",
+        "content.accordion",
+        "content.image",
+        "content.text-block",
+        "content.action-bar"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "showNotes": {
+      "type": "boolean",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "default": false
+    },
+    "note": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::note.note",
+      "mappedBy": "page"
+    }
+  }
+}

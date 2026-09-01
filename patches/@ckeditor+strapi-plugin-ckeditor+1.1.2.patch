@@ -1,0 +1,46 @@
+diff --git a/node_modules/@ckeditor/strapi-plugin-ckeditor/admin/src/index.jsx b/node_modules/@ckeditor/strapi-plugin-ckeditor/admin/src/index.jsx
+index e1fe8c2..17e3e55 100644
+--- a/node_modules/@ckeditor/strapi-plugin-ckeditor/admin/src/index.jsx
++++ b/node_modules/@ckeditor/strapi-plugin-ckeditor/admin/src/index.jsx
+@@ -176,21 +176,27 @@ export default {
+     } );
+   },
+   async registerTrads( { locales } ) {
++    const translationLoaders = {
++      en: () => import( './translations/en.json' ),
++    };
++
+     const importedTrads = await Promise.all(
+-      locales.map( ( locale ) => {
+-        return import( `./translations/${ locale }.json` )
+-          .then( ( { default: data } ) => {
+-            return {
+-              data: data,
+-              locale,
+-            };
+-          } )
+-          .catch( () => {
+-            return {
+-              data: {},
+-              locale,
+-            };
+-          } );
++      locales.map( async ( locale ) => {
++        const loadTrad = translationLoaders[locale] ?? translationLoaders.en;
++
++        try {
++          const { default: data } = await loadTrad();
++
++          return {
++            data,
++            locale,
++          };
++        } catch {
++          return {
++            data: {},
++            locale,
++          };
++        }
+       } )
+     );
+ 

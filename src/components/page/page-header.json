@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_page_page_headers",
+  "info": {
+    "displayName": "Page Header"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

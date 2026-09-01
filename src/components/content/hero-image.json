@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_content_hero_images",
+  "info": {
+    "displayName": "Hero Image",
+    "icon": "landscape"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "component": "content.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

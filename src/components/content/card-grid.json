@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_content_card_grids",
+  "info": {
+    "displayName": "Card Grid"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Card": {
+      "type": "component",
+      "component": "content.card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

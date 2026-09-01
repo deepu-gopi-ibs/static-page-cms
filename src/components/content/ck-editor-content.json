@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_content_ck_editor_contents",
+  "info": {
+    "displayName": "CKEditor Content"
+  },
+  "options": {},
+  "attributes": {
+    "CKEditorContent": {
+      "type": "customField",
+      "customField": "plugin::ckeditor.CKEditor",
+      "options": {
+        "output": "HTML",
+        "licenseKey": "eyJhbGciOiJFUzI1NiJ9.eyJleHAiOjE3ODgzMDcxOTksImp0aSI6IjA4ZGMxMDI0LWMyYWEtNGM4NC1hZmY0LWI3MmI1YTFlNzFlMCIsInVzYWdlRW5kcG9pbnQiOiJodHRwczovL3Byb3h5LWV2ZW50LmNrZWRpdG9yLmNvbSIsImRpc3RyaWJ1dGlvbkNoYW5uZWwiOlsiY2xvdWQiLCJkcnVwYWwiLCJzaCJdLCJ3aGl0ZUxhYmVsIjp0cnVlLCJsaWNlbnNlVHlwZSI6InRyaWFsIiwiZmVhdHVyZXMiOlsiKiJdLCJ2YyI6IjY4YTRlN2E3In0.2U4UHlQPvY78CmQf7r1Kf30cZwjS9mRCvGLR--nSEU020BFOIuz76OAh0MVRjdCf1camNYto6uOsa_SOLBcaDg",
+        "preset": "standard"
+      }
+    }
+  },
+  "config": {}
+}

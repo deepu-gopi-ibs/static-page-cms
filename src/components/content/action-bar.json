@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_content_action_bars",
+  "info": {
+    "displayName": "Action Bar",
+    "icon": "cursor"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "actions": {
+      "type": "component",
+      "component": "content.button",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

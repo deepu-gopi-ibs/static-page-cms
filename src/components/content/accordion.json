@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_content_accordions",
+  "info": {
+    "displayName": "Accordion",
+    "icon": "server"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "component": "content.accordion-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

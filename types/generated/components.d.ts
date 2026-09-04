@@ -181,6 +181,49 @@ export interface ContentTextBlock extends Struct.ComponentSchema {
   };
 }
 
+export interface HtmlCss extends Struct.ComponentSchema {
+  collectionName: 'components_html_csses';
+  info: {
+    displayName: 'CSS';
+  };
+  attributes: {
+    cssCode: Schema.Attribute.Text & Schema.Attribute.Required;
+  };
+}
+
+export interface HtmlHtmlWrapper extends Struct.ComponentSchema {
+  collectionName: 'components_html_html_wrappers';
+  info: {
+    displayName: 'htmlWrapper';
+  };
+  attributes: {
+    CSS: Schema.Attribute.Component<'html.css', true>;
+    JavaScript: Schema.Attribute.Component<'html.java-script', true>;
+    RawHTML: Schema.Attribute.Component<'html.raw-html', false>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface HtmlJavaScript extends Struct.ComponentSchema {
+  collectionName: 'components_html_java_scripts';
+  info: {
+    displayName: 'JavaScript';
+  };
+  attributes: {
+    jsCode: Schema.Attribute.Text;
+  };
+}
+
+export interface HtmlRawHtml extends Struct.ComponentSchema {
+  collectionName: 'components_html_raw_htmls';
+  info: {
+    displayName: 'RawHTML';
+  };
+  attributes: {
+    htmlCode: Schema.Attribute.Text & Schema.Attribute.Required;
+  };
+}
+
 export interface PagePageHeader extends Struct.ComponentSchema {
   collectionName: 'components_page_page_headers';
   info: {
@@ -210,6 +253,10 @@ declare module '@strapi/strapi' {
       'content.row': ContentRow;
       'content.table-cell': ContentTableCell;
       'content.text-block': ContentTextBlock;
+      'html.css': HtmlCss;
+      'html.html-wrapper': HtmlHtmlWrapper;
+      'html.java-script': HtmlJavaScript;
+      'html.raw-html': HtmlRawHtml;
       'page.page-header': PagePageHeader;
     }
   }

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_html_raw_htmls",
+  "info": {
+    "displayName": "RawHTML"
+  },
+  "options": {},
+  "attributes": {
+    "htmlCode": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

@@ -41,7 +41,8 @@
         "content.accordion",
         "content.image",
         "content.text-block",
-        "content.action-bar"
+        "content.action-bar",
+        "html.html-wrapper"
       ]
     },
     "slug": {

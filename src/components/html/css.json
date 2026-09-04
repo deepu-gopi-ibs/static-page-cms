@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_html_csses",
+  "info": {
+    "displayName": "CSS"
+  },
+  "options": {},
+  "attributes": {
+    "cssCode": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

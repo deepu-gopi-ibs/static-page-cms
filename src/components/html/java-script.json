@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_html_java_scripts",
+  "info": {
+    "displayName": "JavaScript"
+  },
+  "options": {},
+  "attributes": {
+    "jsCode": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

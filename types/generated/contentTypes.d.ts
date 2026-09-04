@@ -513,6 +513,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'content.image',
         'content.text-block',
         'content.action-bar',
+        'html.html-wrapper',
       ]
     > &
       Schema.Attribute.SetPluginOptions<{

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_html_html_wrappers",
+  "info": {
+    "displayName": "htmlWrapper"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "RawHTML": {
+      "type": "component",
+      "component": "html.raw-html",
+      "repeatable": false
+    },
+    "JavaScript": {
+      "type": "component",
+      "component": "html.java-script",
+      "repeatable": true
+    },
+    "CSS": {
+      "type": "component",
+      "component": "html.css",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
